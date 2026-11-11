@@ -1,0 +1,36 @@
+queue = []
+
+# Add element
+def enqueue(element):
+    queue.append(element)
+
+# Remove element
+def dequeue():
+    if len(queue) == 0:
+        print("Queue is empty")
+    else:
+        return queue.pop(0)
+
+# Get front element
+def front():
+    if len(queue) == 0:
+        return "Queue is empty"
+    return queue[0]
+
+# Display queue
+def display():
+    print(queue)
+
+
+# Testing
+enqueue(10)
+enqueue(20)
+enqueue(30)
+
+display()
+
+dequeue()
+
+display()
+
+print("Front:", front())
